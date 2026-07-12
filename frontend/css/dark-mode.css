@@ -1740,7 +1740,6 @@ body[data-theme="dark"] .sitemap-search-input {
   color: #ffffff !important;
 }
 
-/* Remove neon glows (box-shadow and text-shadow) from navbar & upbar interactive elements in dark mode */
 body.neon-theme.dark .upbar-btn,
 body.neon-theme.dark .nav-theme-btn,
 body.neon-theme.dark .nav-link,
