@@ -1739,3 +1739,38 @@ body[data-theme="dark"] .sitemap-search-input {
   border-color: #333 !important;
   color: #ffffff !important;
 }
+
+/* Remove neon glows (box-shadow and text-shadow) from navbar & upbar interactive elements in dark mode */
+body.neon-theme.dark .upbar-btn,
+body.neon-theme.dark .nav-theme-btn,
+body.neon-theme.dark .nav-link,
+body.neon-theme.dark .enquiry-link,
+body.neon-theme.dark .login-btn,
+body.neon-theme.dark .dashboard-btn,
+body.neon-theme.dark .logout-btn,
+body.neon-theme.dark .mobile-nav-link,
+body.neon-theme.dark .mobile-login-btn,
+body.neon-theme.dark .mobile-logout-btn,
+body.neon-theme.dark .mobile-dashboard-btn,
+body.neon-theme.dark .mobile-cta-btn,
+body.neon-theme.dark #theme-toggle {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body.neon-theme.dark .upbar-btn:hover,
+body.neon-theme.dark .nav-theme-btn:hover,
+body.neon-theme.dark .nav-link:hover,
+body.neon-theme.dark .enquiry-link:hover,
+body.neon-theme.dark .login-btn:hover,
+body.neon-theme.dark .dashboard-btn:hover,
+body.neon-theme.dark .logout-btn:hover,
+body.neon-theme.dark .mobile-nav-link:hover,
+body.neon-theme.dark .mobile-login-btn:hover,
+body.neon-theme.dark .mobile-logout-btn:hover,
+body.neon-theme.dark .mobile-dashboard-btn:hover,
+body.neon-theme.dark .mobile-cta-btn:hover,
+body.neon-theme.dark #theme-toggle:hover {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}

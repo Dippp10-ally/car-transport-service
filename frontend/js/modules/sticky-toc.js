@@ -453,7 +453,6 @@
           item.classList.remove('active');
           item.style.background = 'transparent';
           item.style.fontWeight = 'normal';
-          item.style.color = '#555';
           item.style.borderLeftColor = 'transparent';
         }
       });
