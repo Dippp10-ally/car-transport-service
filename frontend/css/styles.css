@@ -1061,16 +1061,16 @@ body.neon-theme.dark {
   --text-secondary: #bbbbbb;
 
   /* Accent – toned neon */
-  --accent-pink: #ff2ea6;
-  --accent-cyan: #0de7ff;
+  --accent-pink: #ff6347;
+  --accent-cyan: #ffffff;
   --accent-purple: #c088ff;
 
   /* Subtle glow (beautiful, not ugly) */
-  --glow-pink: 0 0 10px rgba(255, 46, 166, 0.4);
-  --glow-cyan: 0 0 10px rgba(13, 231, 255, 0.35);
+  --glow-pink: none;
+  --glow-cyan: none;
   --glow-purple: 0 0 12px rgba(192, 136, 255, 0.4);
 
-  --border-soft: rgba(255, 46, 166, 0.25);
+  --border-soft: rgba(255, 99, 71, 0.25);
 }
 
 /* ------------------------------
@@ -1084,7 +1084,7 @@ body.neon-theme.light {
   --text-secondary: #555;
 
   /* Muted neon accents for light mode */
-  --accent-pink: #d61f88;
+  --accent-pink: #ff6347;
   --accent-cyan: #00bcd4;
   --accent-purple: #8855ff;
 
@@ -1093,7 +1093,7 @@ body.neon-theme.light {
   --glow-cyan: none;
   --glow-purple: none;
 
-  --border-soft: rgba(214, 31, 136, 0.25);
+  --border-soft: rgba(255, 99, 71, 0.25);
 }
 
 /* ------------------------------
@@ -5501,20 +5501,36 @@ section:last-of-type {
   visibility: visible !important;
 }
 
-/* Disable ALL hover visuals for submit-btn */
+/* Disable ALL hover visuals and blue glows for form submit buttons */
+.submit-btn,
+.submit-emergency-btn,
+.submit-inquiry-btn {
+  box-shadow: none !important;
+}
+
 .submit-btn:hover,
 .submit-btn:active,
-.submit-btn:focus {
+.submit-btn:focus,
+.submit-emergency-btn:hover,
+.submit-emergency-btn:active,
+.submit-emergency-btn:focus,
+.submit-inquiry-btn:hover,
+.submit-inquiry-btn:active,
+.submit-inquiry-btn:focus {
   background: linear-gradient(135deg, var(--primary-color), #ff4500) !important;
   box-shadow: none !important;
 }
 
 /* Remove dark hover overlay */
-.submit-btn::before {
+.submit-btn::before,
+.submit-emergency-btn::before,
+.submit-inquiry-btn::before {
   display: none !important;
 }
 
-.submit-btn {
+.submit-btn,
+.submit-emergency-btn,
+.submit-inquiry-btn {
   background: linear-gradient(135deg, var(--primary-color), #ff4500) !important;
 }
 

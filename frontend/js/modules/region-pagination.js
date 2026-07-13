@@ -158,12 +158,10 @@
 
       loadMoreBtn.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-3px) scale(1.02)';
-        this.style.boxShadow = '0 6px 20px rgba(255,107,53,0.45)';
       });
 
       loadMoreBtn.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) scale(1)';
-        this.style.boxShadow = '0 4px 15px rgba(255,107,53,0.35)';
       });
     } else {
       console.log('❌ Load More button NOT found!');
